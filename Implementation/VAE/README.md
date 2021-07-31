@@ -26,3 +26,4 @@ The purpose is just **Minimze** the **Reconstruction** loss ..
 - Latent Space as a distribution with a learned mean and std of the dataset. Typically used **Gausiaan** Distribution.
 - Learn From the Distribution, find the right **Parameters** defining the **DIstribution**
 - We can generate data from the latent space or the compressed image , which the distribution.
+- At Vae, we learn the **Mean** and the **Variance**
