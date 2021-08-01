@@ -25,5 +25,8 @@ The purpose is just **Minimze** the **Reconstruction** loss ..
 - Based on Bayesian Machine learning.
 - Latent Space as a distribution with a learned mean and std of the dataset. Typically used **Gausiaan** Distribution.
 - Learn From the Distribution, find the right **Parameters** defining the **DIstribution**
-- We can generate data from the latent space or the compressed image , which the distribution.
-- At Vae, we learn the **Mean** and the **Variance**
+- We can generate data from the latent space or the compressed image , which is the distribution.
+- At Vae, we learn the **Mean** and the **Variance** of the data to generate new dataset.
+
+
+the decoder, is also similar to a feed-forward network. However, instead of reducing data to a lower dimension, it reconstructs the data from its lower dimension representation Z to its original dimension X.
