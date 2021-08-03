@@ -33,6 +33,32 @@ Important Notes :
 	- Takes an input from training data or Generator, and Discriminator determines wheter its real or fake.
 - Tuning
 
+## Nanti Ditambahin,masih banyak gw , pengen ngondang .. Ya kan ini Note Gw sendiri :v
+
+Cost Function / Loss Function on Generative Adversarial network
+- Two Cost Functions , one for each models
+- $\theta$ Define the ( Weights and Biases on Neural Network)
+- *J($\theta$)* Define the Loss Function that we're trying to reduce
+
+	- Cost Function For Generator, *J$^{(G)}$*  = ($\theta^{(G)}$ , $\theta^{(D)}$)
+	- Cost Function For Discriminator, *J$^{D}$* = ($\theta^{(G)}$, $\theta^{(D)}$)
+
+	Every single models, is responsible for **minimize** its Cost Function
+	- Generator will Fine tune $\theta^{(G)}$
+	- Discriminator will Fine tune $\theta^{(D)}$
+
+Example :
+1. J adalah **Cost Function** (Banyaknya Waktu untuk sampai Ke Rumah)
+2. Banyak Pengendara mendefinisikan $\theta^{pengedara}$
+3. Keputusan yang diambil oleh seseorang dalam menentukan Rute ,mendefinisikan $\theta^{Seseorang}$
+4. Apabila kita hendak kembali kerumah dari suatu tempat, kita pasti melewati jalan terpendek dan hal yang mendasari kecepatan kita untuk sampai ke rumah adalah , **Keputusan** dan **Banyaknya Pengendara**.
+5. Maka dari itu Jika kita hendak sampai ke rumah ,maka banyaknya waktu yang dibutuhkan dapat dirumuskan sebagai berikut : *J* = ($\theta^{seseorang}$, $\theta^{pengendara}$) dalam artian, untuk mendapatkan waktu yang **minim** untuk sampai rumah , kita harus dapat mempertimbangkan kedua parameter tersebut.
+
+#### Now You Know Why We Need Generative Adversarial network 
+- Because VAE Depends on the distribution they generate, thus the output tend to follow the distributions
+
+## Lets Code it
+
 
 
  
